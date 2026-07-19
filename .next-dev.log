@@ -1,0 +1,25 @@
+  ▲ Next.js 14.2.30
+  - Local:        http://localhost:4173
+  - Network:      http://0.0.0.0:4173
+
+ ✓ Starting...
+ ✓ Ready in 15.5s
+ ○ Compiling / ...
+ ✓ Compiled / in 12.9s (9541 modules)
+ GET / 200 in 13674ms
+ ✓ Compiled in 1468ms (9541 modules)
+ ✓ Compiled in 603ms (9541 modules)
+ ✓ Compiled in 1594ms (454 modules)
+ ✓ Compiled in 3.1s (468 modules)
+ ✓ Compiled in 1971ms (468 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 4.7s (457 modules)
+ GET /lisbon-tram.png 404 in 5252ms
+ ○ Compiling /terms ...
+ ✓ Compiled /terms in 8.2s (457 modules)
+  ▲ Next.js 14.2.30
+  - Local:        http://localhost:4173
+  - Network:      http://0.0.0.0:4173
+
+ ✓ Starting...
+ ✓ Ready in 11s
