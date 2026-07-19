@@ -1,3 +1,14 @@
+import { StoreBadges } from "./StoreBadges";
+
 export function SiteFooter() {
-  return <footer className="site-footer section-pad"><div className="footer-top"><a className="brand" href="/"><img className="brand-icon" src="/wandr-icon.png" alt="" /><span>wandr</span></a><p>Travel a little more like yourself.</p><a className="button button-dark footer-button" href="https://apps.apple.com/app/id6785083129" target="_blank" rel="noreferrer">Get the app <span>↗</span></a></div><div className="footer-bottom"><span>© 2026 Wandr. All rights reserved.</span><span className="legal-links"><a href="/privacy">Privacy Policy</a><a href="/terms">Terms of Service</a><a href="mailto:support@wandr.com">Contact</a></span></div></footer>;
+  return (
+    <footer className="site-footer section-pad">
+      <div className="footer-main">
+        <a className="brand" href="/"><img className="brand-icon" src="/wandr-icon.png" alt="" /><span>wandr</span></a>
+        <p>Travel a little more like yourself.</p>
+        <StoreBadges compact />
+      </div>
+      <div className="footer-bottom"><span>© 2026 Wandr. All rights reserved.</span><span className="legal-links"><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="mailto:support@wandr.com">Contact</a></span></div>
+    </footer>
+  );
 }

@@ -1,7 +1,7 @@
+import { DestinationCarousel } from "../components/DestinationCarousel";
 import { SiteFooter } from "../components/SiteFooter";
 import { SiteHeader } from "../components/SiteHeader";
-
-const appStoreUrl = "https://apps.apple.com/app/id6785083129";
+import { StoreBadges } from "../components/StoreBadges";
 
 export default function HomePage() {
   return (
@@ -10,183 +10,46 @@ export default function HomePage() {
       <main>
         <section className="hero section-pad">
           <div className="hero-copy">
-            <p className="eyebrow">YOUR NEXT GOOD MEMORY</p>
-            <h1>
-              Make room for
-              <br />
-              <em>the good stuff.</em>
-            </h1>
-            <p className="hero-description">
-              Wandr helps you discover places worth going to, plan trips that
-              feel like you, and keep the whole journey in one place.
-            </p>
-            <div className="download-buttons">
-              <a
-                className="button button-dark"
-                href={appStoreUrl}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Download on the App Store <span>↗</span>
-              </a>
-              <span className="button button-store-soon" aria-label="Download on Google Play, coming soon">
-                Google Play <small>Coming soon</small>
-              </span>
-            </div>
+            <p className="kicker">YOUR NEXT GOOD MEMORY</p>
+            <h1><strong>Meet Wandr.</strong><br />Find places worth going to.</h1>
+            <p className="hero-description">Discover somewhere new, shape it into a trip, and keep the whole journey together in one place.</p>
+            <StoreBadges />
           </div>
-          <div className="hero-art" aria-label="Wandr app preview">
-            <div className="sun-orb" />
-            <div className="route route-one" />
-            <div className="route route-two" />
-            <div className="route route-three" />
-            <div className="floating-note note-top">
-              <span>✦</span> find your way
-            </div>
-            <div className="phone phone-hero">
-              <div className="phone-speaker" />
-              <div className="phone-screen">
-                <div className="screen-top">
-                  <span>09:41</span>
-                  <span>● ◒ ▰</span>
-                </div>
-                <div className="screen-logo">
-                  <img
-                    className="screen-app-icon"
-                    src="/wandr-icon.png"
-                    alt=""
-                  />{" "}
-                  wandr
-                </div>
-                <div className="map-grid">
-                  <span className="map-river" />
-                  <span className="map-road road-a" />
-                  <span className="map-road road-b" />
-                  <span className="map-pin pin-a">✦</span>
-                  <span className="map-pin pin-b">✦</span>
-                </div>
-                <div className="trip-sheet">
-                  <div>
-                    <span className="micro-label">SATURDAY IN</span>
-                    <strong>Cape Town</strong>
-                  </div>
-                  <span className="circle-arrow">↗</span>
-                </div>
-              </div>
-            </div>
-            <div className="floating-note note-bottom">
-              made for the <em>wandering</em> kind
-            </div>
+          <div className="hero-product">
+            <img src="/wandr-phone-hero.png" alt="Wandr app shown on two phones with destination discovery and saved trip views" />
           </div>
         </section>
-        <section className="statement section-pad" id="how-it-works">
-          <p className="eyebrow">LESS PLANNING. MORE LIVING.</p>
-          <h2>
-            The world is big.
-            <br />
-            <em>Your trip can feel simple.</em>
-          </h2>
-          <div className="feature-grid">
-            {[
-              [
-                "01",
-                "⌁",
-                "Find your next favourite place",
-                "Explore curated spots and fresh ideas, wherever you are or wherever you’re going.",
-                "feature-sage",
-              ],
-              [
-                "02",
-                "◌",
-                "Turn ideas into a real plan",
-                "Build an itinerary that makes sense for your time, your people, and your kind of trip.",
-                "feature-orange",
-              ],
-              [
-                "03",
-                "↗",
-                "Take the good parts with you",
-                "Keep your plans, places, and memories together, ready for the road ahead.",
-                "feature-lavender",
-              ],
-            ].map(([number, icon, title, body, colour]) => (
-              <article className={`feature-card ${colour}`} key={number}>
-                <span className="feature-number">{number}</span>
-                <div className="feature-icon">{icon}</div>
-                <h3>{title}</h3>
-                <p>{body}</p>
-                <span className="feature-line" />
-              </article>
-            ))}
+
+        <DestinationCarousel />
+
+        <section className="trip-flow section-pad" id="how-it-works">
+          <div className="flow-intro">
+            <p className="kicker">FROM MAYBE TO LET&apos;S GO</p>
+            <h2>A simpler way to turn travel ideas into real plans.</h2>
+          </div>
+          <div className="flow-steps">
+            <article><span>01</span><h3>Discover</h3><p>Explore places that make you want to pack a bag.</p></article>
+            <article><span>02</span><h3>Plan</h3><p>Bring the places you love into one clear trip.</p></article>
+            <article><span>03</span><h3>Go</h3><p>Keep what you need close when the journey starts.</p></article>
           </div>
         </section>
-        <section className="showcase section-pad" id="why-wandr">
-          <div className="showcase-image">
-            <div className="image-copy">
-              <span className="eyebrow">THE WANDR WAY</span>
-              <h2>
-                Plans are better
-                <br />
-                <em>when they leave room.</em>
-              </h2>
-            </div>
-            <div className="sticker">
-              go
-              <br />
-              somewhere
-              <br />
-              <em>good</em> ↗
-            </div>
-            <span className="image-credit">
-              Mountain landscape · U.S. Fish &amp; Wildlife Service · public
-              domain
-            </span>
-          </div>
-          <div className="showcase-copy">
-            <p className="eyebrow">BUILT FOR THE IN-BETWEEN</p>
-            <h2>
-              Enough structure
-              <br />
-              <em>to set you free.</em>
-            </h2>
-            <p>
-              Wandr brings your inspiration and your itinerary together without
-              making travel feel like a spreadsheet. Discover something, save
-              it, share it, and go.
-            </p>
-            <a
-              className="text-link"
-              href={appStoreUrl}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Start wandering <span>↗</span>
-            </a>
+
+        <section className="travel-feature section-pad">
+          <div className="feature-image"><img src="/cape-town-coast.png" alt="Cape Town coastline beneath Table Mountain" /></div>
+          <div className="feature-copy">
+            <p className="kicker">TRAVEL YOUR WAY</p>
+            <h2>Make room for the good stuff.</h2>
+            <p>Wandr helps you hold onto the places, plans, and moments that make a trip feel like yours.</p>
+            <a href="#destinations">Explore destinations</a>
           </div>
         </section>
-        <section className="closing section-pad">
-          <img
-            className="closing-app-icon"
-            src="/wandr-icon.png"
-            alt="Wandr app icon"
-          />
-          <p className="eyebrow">YOUR MAP IS WAITING</p>
-          <h2>
-            Go make a<br />
-            <em>good story.</em>
-          </h2>
-          <div className="download-buttons download-buttons-light">
-            <a
-              className="button button-light"
-              href={appStoreUrl}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Download on the App Store <span>↗</span>
-            </a>
-            <span className="button button-store-soon" aria-label="Download on Google Play, coming soon">
-              Google Play <small>Coming soon</small>
-            </span>
-          </div>
+
+        <section className="closing-cta section-pad">
+          <img className="closing-icon" src="/wandr-icon.png" alt="Wandr" />
+          <p className="kicker">YOUR MAP IS WAITING</p>
+          <h2>Go somewhere good.</h2>
+          <p>Start discovering on iPhone today.</p>
+          <StoreBadges light />
         </section>
       </main>
       <SiteFooter />
