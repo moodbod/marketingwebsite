@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "W239S6NAHT.website.wandr.app",
+        "paths": [
+          "/i/*",
+          "/t/*",
+          "/trip-invite/*"
+        ]
+      }
+    ]
+  }
+}

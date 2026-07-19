@@ -8,7 +8,7 @@ export function SiteFooter() {
         <p>Travel a little more like yourself.</p>
         <StoreBadges compact />
       </div>
-      <div className="footer-bottom"><span>© 2026 Wandr. All rights reserved.</span><span className="legal-links"><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="mailto:support@wandr.com">Contact</a></span></div>
+      <div className="footer-bottom"><span>© 2026 Wandr. All rights reserved.</span><span className="legal-links"><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/support">Support</a></span></div>
     </footer>
   );
 }
