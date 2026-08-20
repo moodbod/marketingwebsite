@@ -18,8 +18,8 @@ export default function SupportPage() {
 
         <p>
           For help with Wandr, email{" "}
-          <a href="mailto:support@wandr.com?subject=Wandr%20Support%20Request">
-            support@wandr.com
+          <a href="mailto:moodbod.agency@gmail.com?subject=Wandr%20Support%20Request">
+            moodbod.agency@gmail.com
           </a>
           . Include a short description of the issue and the email address used for your
           Wandr account. Do not send passwords, verification codes, or payment details.
@@ -35,15 +35,19 @@ export default function SupportPage() {
         <h2>Location and navigation</h2>
         <p>
           Location access is optional until a location-based feature needs it. You can review or
-          change Wandr&apos;s location permission in iOS Settings. Background tracking runs only
-          during an active trip or wander and stops when you end it.
+          change Wandr&apos;s location permission in iOS Settings. Wandr requests location only while
+          you use the app and does not request Always access. When you choose a location feature,
+          it can show nearby places, navigate and record an active trip, add check-ins, or share
+          live location with trip members.
         </p>
 
         <h2>Account deletion</h2>
         <p>
-          You can delete your Wandr account from Settings in the app. Account deletion is
-          permanent. If you cannot access the app, email support from the address associated with
-          your account so we can verify and process the request.
+          You can permanently delete your Wandr account from Settings in the app. Account access
+          and the profile are removed immediately; remaining associated content is removed from
+          active systems within 30 days. Wandr confirms when the request is accepted and again when
+          deletion is complete. If you cannot access the app, email support from the
+          address associated with your account so we can verify and process the request.
         </p>
 
         <h2>Subscriptions</h2>
