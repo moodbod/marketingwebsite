@@ -1,4 +1,4 @@
-const destinations = [
+export const destinations = [
   {
     name: "Cape Town",
     region: "South Africa",

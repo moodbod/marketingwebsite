@@ -6,8 +6,13 @@
         "appID": "W239S6NAHT.website.wandr.app",
         "paths": [
           "/i/*",
+          "/invite/*",
           "/t/*",
-          "/trip-invite/*"
+          "/trip-invite/*",
+          "/group/*",
+          "/profile/*",
+          "/itinerary/*",
+          "/itineraries/*"
         ]
       }
     ]

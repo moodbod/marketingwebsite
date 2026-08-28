@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import { SiteFooter } from "../../components/SiteFooter";
 import { SiteHeader } from "../../components/SiteHeader";
+import { createPageMetadata } from "../../lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Wandr Support",
-  description: "Get help with the Wandr app, your trips, account, or subscription.",
-};
+  description: "Get help with the Wandr app, your trips, account, location features or subscription.",
+  canonicalPath: "/support",
+});
 
 export default function SupportPage() {
   return (

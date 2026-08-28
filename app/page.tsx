@@ -2,6 +2,17 @@ import { DestinationCarousel } from "../components/DestinationCarousel";
 import { SiteFooter } from "../components/SiteFooter";
 import { SiteHeader } from "../components/SiteHeader";
 import { StoreBadges } from "../components/StoreBadges";
+import {
+  createPageMetadata,
+  SITE_DESCRIPTION,
+  SITE_TITLE,
+} from "../lib/seo";
+
+export const metadata = createPageMetadata({
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
+  canonicalPath: "/",
+});
 
 export default function HomePage() {
   return (
@@ -40,7 +51,7 @@ export default function HomePage() {
             <p className="kicker">TRAVEL YOUR WAY</p>
             <h2>Make room for the good stuff.</h2>
             <p>Wandr helps you hold onto the places, plans, and moments that make a trip feel like yours.</p>
-            <a href="#destinations">Explore destinations</a>
+            <a href="/destinations">Explore destinations</a>
           </div>
         </section>
 
