@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   publisher: SITE_NAME,
   category: "travel",
   verification: {
-    google: "zswr1Qy8RjLA5lkN62vjFZyz3fHRH9uxlYYv9fHuOP8",
+    google: "VlriD_iOEFco-M3QRo96KjJp7M7-h7oFDNH5FjKIMWM",
   },
   icons: { icon: "/wandr-icon.png", apple: "/wandr-icon.png" },
   formatDetection: {
