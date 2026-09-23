@@ -20,6 +20,9 @@ export const metadata: Metadata = {
   creator: SITE_NAME,
   publisher: SITE_NAME,
   category: "travel",
+  verification: {
+    google: "zswr1Qy8RjLA5lkN62vjFZyz3fHRH9uxlYYv9fHuOP8",
+  },
   icons: { icon: "/wandr-icon.png", apple: "/wandr-icon.png" },
   formatDetection: {
     address: false,

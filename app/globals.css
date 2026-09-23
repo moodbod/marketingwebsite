@@ -4,7 +4,7 @@
   --line: #e8e8e8;
   --paper: #fff;
   --soft: #f7f7f4;
-  --lime: #adff00;
+  --lime: #b6ff00;
 }
 * {
   box-sizing: border-box;
@@ -169,14 +169,90 @@ button {
 }
 .hero-product {
   min-width: 0;
+  width: 100%;
 }
-.hero-product img {
+.hero-screenshots {
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  max-width: 680px;
+  position: relative;
+  width: 100%;
+}
+.hero-screen {
+  border: 1px solid rgba(11, 11, 11, 0.12);
+  border-radius: 26px;
+  box-shadow:
+    0 32px 72px rgba(11, 11, 11, 0.2),
+    0 8px 24px rgba(11, 11, 11, 0.12);
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+.hero-screen img {
   display: block;
   height: auto;
-  margin-left: auto;
-  max-height: 650px;
-  object-fit: contain;
   width: 100%;
+}
+.hero-screen-main {
+  left: 32%;
+  top: 1%;
+  transform: translateY(-1%);
+  width: 36%;
+  z-index: 5;
+}
+.hero-screen-left-inner {
+  left: 15%;
+  top: 8%;
+  transform: rotate(-6deg);
+  width: 31%;
+  z-index: 3;
+}
+.hero-screen-right-inner {
+  right: 15%;
+  top: 8%;
+  transform: rotate(6deg);
+  width: 31%;
+  z-index: 4;
+}
+.hero-screen-left-outer {
+  left: 1%;
+  top: 16%;
+  transform: rotate(-11deg);
+  width: 27%;
+  z-index: 1;
+}
+.hero-screen-right-outer {
+  right: 1%;
+  top: 16%;
+  transform: rotate(11deg);
+  width: 27%;
+  z-index: 2;
+}
+.hero-screenshots:hover .hero-screen-main {
+  box-shadow:
+    0 38px 82px rgba(11, 11, 11, 0.23),
+    0 10px 28px rgba(11, 11, 11, 0.14);
+  transform: translateY(-10px);
+}
+.hero-screenshots:hover .hero-screen-left-inner {
+  transform: rotate(-8deg) translate(-6px, 3px);
+}
+.hero-screenshots:hover .hero-screen-right-inner {
+  transform: rotate(8deg) translate(6px, 3px);
+}
+.hero-screenshots:hover .hero-screen-left-outer {
+  transform: rotate(-13deg) translate(-8px, 6px);
+}
+.hero-screenshots:hover .hero-screen-right-outer {
+  transform: rotate(13deg) translate(8px, 6px);
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-screen {
+    transition: none;
+  }
 }
 .destinations {
   background: var(--soft);
@@ -618,6 +694,12 @@ button {
   }
   .hero {
     padding-top: 38px;
+  }
+  .hero-screenshots {
+    margin-top: 8px;
+  }
+  .hero-screen {
+    border-radius: 16px;
   }
   .hero h1 {
     font-size: 48px;

@@ -1,4 +1,5 @@
 import { DestinationCarousel } from "../components/DestinationCarousel";
+import { HeroScreenshots } from "../components/HeroScreenshots";
 import { SiteFooter } from "../components/SiteFooter";
 import { SiteHeader } from "../components/SiteHeader";
 import { StoreBadges } from "../components/StoreBadges";
@@ -23,11 +24,11 @@ export default function HomePage() {
           <div className="hero-copy">
             <p className="kicker">YOUR NEXT GOOD MEMORY</p>
             <h1><strong>Meet Wandr.</strong><br />Find places worth going to.</h1>
-            <p className="hero-description">Discover somewhere new, shape it into a trip, and keep the whole journey together in one place.</p>
+            <p className="hero-description">Discover trips, turn them into plans, follow the journey, and keep the memories—all in one place.</p>
             <StoreBadges />
           </div>
           <div className="hero-product">
-            <img src="/wandr-phone-hero.png" alt="Wandr app shown on two phones with destination discovery and saved trip views" />
+            <HeroScreenshots />
           </div>
         </section>
 
